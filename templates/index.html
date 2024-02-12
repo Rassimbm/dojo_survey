@@ -12,12 +12,12 @@
         <form action="/process" method="post">
             <h3 class="text-center text-warning">Dojo Survey</h3>
             <div class="form-group">
-                <label for="user_name" class="form-label text-light">Name:</label>
-                <input type="text" name="user_name" class="form-control" placeholder="Your name...">
+                <label for="user_name" class="form-label text-light m-2">Name:</label>
+                <input type="text" name="user_name" class="form-control" placeholder="Your name..." required>
             </div>
             <div class="form-group">
-                <label for="select_dojo" class="form-label text-light">Dojo Location:</label>
-                <select class="form-select" name="select_dojo">
+                <label for="select_dojo" class="form-label text-light m-2">Dojo Location:</label>
+                <select class="form-select" name="select_dojo" requiered>
                     <option selectecd>Choose location...</option>
                     <option>NYC</option>
                     <option>Chicago</option>
@@ -27,8 +27,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="select_language" class="form-label text-light">Favorite Language:</label>
-                <select class="form-select" name="select_language">
+                <label for="select_language" class="form-label text-light m-2">Favorite Language:</label>
+                <select class="form-select" name="select_language" required>
                     <option selected>Choose language...</option>
                     <option>Javascrip</option>
                     <option>Python</option>
@@ -36,6 +36,10 @@
                     <option>C#</option>
                     <option>CSS</option>
                 </select>
+            </div>
+            <div class="form-group">
+                <label for="user_comment" class="form-label text-light m-2">Comment (Optional):</label>
+                <textarea class="form-control" rows="5" name="user_comment"></textarea>
             </div>
             <input type="submit" value="Submit" class="btn bg-warning m-3 mx-auto">
         </form>
